@@ -5664,7 +5664,11 @@ class Solution {
 }
 ```
 
+**Complexity**
 
+- Time: `O(k*m*n*(m+n))`, where `m<=50` is the number of rows, `n<=50` is the number of columns, `k<=10` is the number of pieces of pizza.
+  Explain: There are total `k*m*n` states in `dfs(...k, r, c...)`. Each state needs maximum `(m+n)` times to cut in horizontal or vertical.
+- Space: `O(k*m*n)`
 
 
 
